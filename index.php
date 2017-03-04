@@ -8,7 +8,7 @@ if ((isset($params[0]) && !empty($params[0])
     && file_exists("controller/" . $params[0] . "_controller.php")))
     $controllerName = $params[0];
 else
-    $controllerName = 'home';
+    $controllerName = 'index';
 
 if (isset($params[2])) {
     $actionParam = array_slice($params, 2);
