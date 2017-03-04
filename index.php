@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+if (!isset($_SESSION['logged'])) {
+    $_SESSION['logged'] = 0;
+}
+
 if (isset($_GET['p']))
     $params = explode('/', $_GET['p']);
 
